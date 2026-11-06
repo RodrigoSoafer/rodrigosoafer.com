@@ -37,7 +37,9 @@ links list; add the row, uncomment, push.
 
 Control panel: https://www.hover.com/control_panel/
 
-Add these records. Leave the existing MX (`smtp.google.com`, Google Workspace mail) untouched.
+First remove any A or CNAME record Hover already has on `@` and `www` (parked or forwarding
+records clash with these). Then add the five below. Leave the MX record (`1 smtp.google.com`,
+verified live 6 Nov 2026) untouched: that is the mail.
 
 | Type | Host | Value |
 |---|---|---|
